@@ -19,3 +19,18 @@ https://live.warthunder.com/contribution_agreement/?lang=ru
 
 Важно:
 В репозиторий добавлены ассеты, сжатые с потерями (ogg, vorbis).  Это сделано для того, чтобы уменьшить объем ассетов, в не сжатом виде он превышает 20 Гб. То есть проект предназначен для работы с не сжатыми ассетами (wav, например 44100 Гц, 16 бит), поскольку в нем выставлены глобальные настройки сжатия (vorbis, качество 37%). Повторно сжатые ассеты сильно теряют в качестве, и могут звучать с заметным металлическим призвуком.
+
+Patch notes:
+-------------------------------------------------------------------------------------------------------------------------------
+09.04.2020 - Added fmod project version related to major patch 1.97.1.X
+
+Fmod Studio version - 1.10.17
+
+ - Weapon system reworked, added "on_shot" parameter that triggers shot event. That was done for better sound channels control.
+ - Explosions and cannons gain a modular assembly system.
+ - Added crew dialogs, all languages for ground and naval crew, aircraft crew - only english and russian (for now).
+ - Added empty music events
+
+Notes:
+music events in aircraft/music/init should be empty, do not add any music in these events.
+-------------------------------------------------------------------------------------------------------------------------------
