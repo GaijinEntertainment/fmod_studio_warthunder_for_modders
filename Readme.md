@@ -24,7 +24,7 @@ Patch notes:
 -------------------------------------------------------------------------------------------------------------------------------
 16.07.2020 - Fmod Studio version updated. Now it is 2.00.09.
 
-New dialog localisation assets and corresponding project banks will be added gradually with next commits.
+New dialog localisations (assets) will be added gradually with next commits.
 -------------------------------------------------------------------------------------------------------------------------------
 09.04.2020 - Added fmod project version related to major patch 1.97.1.X
 
