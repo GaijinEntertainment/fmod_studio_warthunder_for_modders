@@ -22,6 +22,8 @@ https://live.warthunder.com/contribution_agreement/?lang=ru
 
 Patch notes:
 -------------------------------------------------------------------------------------------------------------------------------
+27.11.2020 - Fmod Studio project updated to "New Power" release state.
+-------------------------------------------------------------------------------------------------------------------------------
 16.07.2020 - Fmod Studio version updated. Now it is 2.00.09.
 
 New dialog localisations (assets) will be added gradually with next commits.
