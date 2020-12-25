@@ -27,9 +27,9 @@ Patch notes:
 High fire rate weapon sound events forming method changed from loop to one shot.
 Note: now you can choose automatic weapon sound events forming method (loop/oneshot) by adding in config.blk in sound{} block this string: useLoopsForGunSound:b=yes
 27.11.2020 - Fmod Studio project updated to "New Power" release state.
--------------------------------------------------------------------------------------------------------------------------------
-16.07.2020 - Fmod Studio version updated. Now it is 2.00.09.
 
+16.07.2020 - Fmod Studio version updated. Now it is 2.00.09.
+-------------------------------------------------------------------------------------------------------------------------------
 New dialog localisations (assets) will be added gradually with next commits.
 -------------------------------------------------------------------------------------------------------------------------------
 09.04.2020 - Added fmod project version related to major patch 1.97.1.X
