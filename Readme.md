@@ -22,6 +22,10 @@ https://live.warthunder.com/contribution_agreement/?lang=ru
 
 Patch notes:
 -------------------------------------------------------------------------------------------------------------------------------
+24.03.2021 - Ixwa Strike project update.
+
+The main feature of this project is aircraft weapon sound generation system, now it is oneshot instead of looping mode. But, still you can switch between looping and oneshot system, by typing useLoopsForGunSound:b=yes in sound{} block of config.blk.
+-------------------------------------------------------------------------------------------------------------------------------
 25.12.2020 - Fmod Studio project version changed to 2.1.6.
 -------------------------------------------------------------------------------------------------------------------------------
 High fire rate weapon sound events forming method changed from loop to one shot.
