@@ -26,6 +26,7 @@ Patch notes:
 ----------------------------------
 
 The main feature of this project is aircraft weapon sound generation system, now it is oneshot instead of looping mode. But, still you can switch between looping and oneshot system, by typing useLoopsForGunSound:b=yes in sound{} block of config.blk.
+PS: hangar.bank still contains music events, that's bad news. But, I'm about to get rid of it in the next major update.
 
 ----------------------------------
 25.12.2020 - Fmod Studio project version changed to 2.1.6.
