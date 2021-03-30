@@ -22,7 +22,7 @@ https://live.warthunder.com/contribution_agreement/?lang=ru
 
 Patch notes:
 -------------------------------------------------------------------------------------------------------------------------------
-24.03.2021 - Added custom script for weapon rapid fire tests.
+30.03.2021 - Added custom script for weapon rapid fire tests.
 ----------------------------------
 
 Now you can try rapid fire with "Ctrl+," shortcut. Update fmod project and run Script->Reload menu command. Then, choose weapon sound event that contains on_shot parameter, press Play, and hit "Ctrl+,". You also will be able to adjust fire rate from 0 to 2000 rpm.
