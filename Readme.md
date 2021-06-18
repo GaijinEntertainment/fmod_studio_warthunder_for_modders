@@ -26,7 +26,7 @@ Patch notes:
 18.06.2021 - Red Skies fmod project update.
 ----------------------------------
 
-The main feature of this update - there is no more hangar.bank, all sound events distributed between other fmod banks. Also, now we have more ground vehicles tracks sound events, and several new sound events, like pjojectiles camera for naval battles, ground vehicles suspension hits, etc.
+The main feature of this update - there is no more hangar.bank, all sound events distributed between other fmod banks (make sure you have no old hangar.bank in your mod folder, it can lead to random consequences, like super-loud sounds). Also, now we have more ground vehicles tracks sound events, and several new sound events, like pjojectiles camera for naval battles, ground vehicles suspension hits, etc.
 
 -----------------------
 30.03.2021 - Added custom script for weapon rapid fire tests.
