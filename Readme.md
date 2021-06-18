@@ -21,7 +21,14 @@ https://live.warthunder.com/contribution_agreement/?lang=ru
 В репозиторий добавлены ассеты, сжатые с потерями (ogg, vorbis).  Это сделано для того, чтобы уменьшить объем ассетов, в не сжатом виде он превышает 20 Гб. То есть проект предназначен для работы с не сжатыми ассетами (wav, например 44100 Гц, 16 бит), поскольку в нем выставлены глобальные настройки сжатия (vorbis, качество 37%). Повторно сжатые ассеты сильно теряют в качестве, и могут звучать с заметным металлическим призвуком.
 
 Patch notes:
--------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------
+-----------------------
+18.06.2021 - Red Skies fmod project update.
+----------------------------------
+
+The main feature of this update - there is no more hangar.bank, all sound events distributed between other fmod banks. Also, now we have more ground vehicles tracks sound events, and several new sound events, like pjojectiles camera for naval battles, ground vehicles suspension hits, etc.
+
+-----------------------
 30.03.2021 - Added custom script for weapon rapid fire tests.
 ----------------------------------
 
