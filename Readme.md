@@ -23,6 +23,18 @@ https://live.warthunder.com/contribution_agreement/?lang=ru
 Patch notes:
 --------------------------------------------------------------------------------------------------------
 -----------------------
+17.09.2021 - Direct Hit fmod project update.
+----------------------------------
+
+This update got the new automatic weapon sound system, and new automatic weapon sound events, for all in-game vehicles. In a nutshell, it is a kind of loop mode, but with an element of a granular synthesis. You can read about how you can switch the support of sound modification between old and new weapon sound systems here:
+
+EN:
+https://wiki.warthunder.com/Sound_modifications
+
+RU:
+https://wiki.warthunder.ru/%D0%97%D0%B2%D1%83%D0%BA%D0%BE%D0%B2%D1%8B%D0%B5_%D0%BC%D0%BE%D0%B4%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%86%D0%B8%D0%B8
+
+-----------------------
 18.06.2021 - Red Skies fmod project update.
 ----------------------------------
 
