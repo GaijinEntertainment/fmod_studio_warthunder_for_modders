@@ -23,6 +23,12 @@ https://live.warthunder.com/contribution_agreement/?lang=ru
 Patch notes:
 --------------------------------------------------------------------------------------------------------
 -----------------------
+17.09.2021 - Ground Breaking fmod project update.
+----------------------------------
+
+Nothing special about this update. Just some new sound events and minor tweaks.
+
+-----------------------
 17.09.2021 - Direct Hit fmod project update.
 ----------------------------------
 
