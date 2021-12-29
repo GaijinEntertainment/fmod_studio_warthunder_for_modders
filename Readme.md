@@ -23,6 +23,12 @@ https://live.warthunder.com/contribution_agreement/?lang=ru
 Patch notes:
 --------------------------------------------------------------------------------------------------------
 -----------------------
+29.12.2021 - Winged Lions fmod project update.
+----------------------------------
+
+Added new jet engines sound events. Added new jet fly by sound assets, ground cannons sound assets, and some other sound assets.
+
+-----------------------
 03.11.2021 - Ground Breaking fmod project update.
 ----------------------------------
 
