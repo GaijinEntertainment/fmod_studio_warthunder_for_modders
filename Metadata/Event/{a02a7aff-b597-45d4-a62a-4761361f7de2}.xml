@@ -74,10 +74,13 @@
 			<value>4</value>
 		</property>
 		<property name="voiceStealing">
-			<value>4</value>
+			<value>1</value>
 		</property>
 		<property name="priority">
 			<value>4</value>
+		</property>
+		<property name="triggerCooldown">
+			<value>300</value>
 		</property>
 	</object>
 	<object class="MarkerTrack" id="{d2a2baae-2d12-4c72-97ce-8d1bf8e71ef2}" />
@@ -160,8 +163,11 @@
 	</object>
 	<object class="EventMixerMaster" id="{9f5fd237-6f26-4fbd-a861-d819dbfeb375}">
 		<property name="volume">
-			<value>1</value>
+			<value>2</value>
 		</property>
+		<relationship name="modulators">
+			<destination>{afc32a5c-459c-4a50-8e9f-597440ed6f28}</destination>
+		</relationship>
 		<relationship name="effectChain">
 			<destination>{87d5bc7a-66b7-4f0c-a0f9-861c681f690e}</destination>
 		</relationship>
@@ -466,6 +472,23 @@
 			<destination>{9f5fd237-6f26-4fbd-a861-d819dbfeb375}</destination>
 		</relationship>
 	</object>
+	<object class="ADSRModulator" id="{afc32a5c-459c-4a50-8e9f-597440ed6f28}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>volume</value>
+		</property>
+		<property name="initialValue">
+			<value>-80</value>
+		</property>
+		<property name="attackTime">
+			<value>500</value>
+		</property>
+		<property name="releaseTime">
+			<value>500</value>
+		</property>
+		<property name="finalValue">
+			<value>-80</value>
+		</property>
+	</object>
 	<object class="MixerBusEffectChain" id="{87d5bc7a-66b7-4f0c-a0f9-861c681f690e}">
 		<relationship name="effects">
 			<destination>{3a051b0f-02fb-4829-bb5f-2a69ac0046ce}</destination>
@@ -663,6 +686,7 @@
 	<object class="MixerBusEffectChain" id="{cd10b0b6-86ba-437d-9c9c-7df43cf0e5bd}">
 		<relationship name="effects">
 			<destination>{b9d7b97c-9788-48fd-a648-282a9c78474c}</destination>
+			<destination>{989dd451-2e5b-44ec-9a68-ac6fa31b8a6b}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{e24ecdf7-0c0f-4ee6-8ae1-261bd8f95602}" />
@@ -714,6 +738,7 @@
 		<relationship name="effects">
 			<destination>{b4767621-3914-4141-b8ec-56dcf8bd228b}</destination>
 			<destination>{a7327b02-8a8b-4b63-a718-8e0f59cc3e0d}</destination>
+			<destination>{a5efc5f2-c791-4f19-ba09-75edcf514abc}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{e113cd2c-da03-481f-a2ad-12a31c18262c}" />
@@ -924,6 +949,14 @@
 		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{b9d7b97c-9788-48fd-a648-282a9c78474c}" />
+	<object class="ProxyEffect" id="{989dd451-2e5b-44ec-9a68-ac6fa31b8a6b}">
+		<property name="inputFormat">
+			<value>0</value>
+		</property>
+		<relationship name="preset">
+			<destination>{ed9be60e-b3d8-403a-8945-465c289600e9}</destination>
+		</relationship>
+	</object>
 	<object class="AutomationCurve" id="{901af011-9679-4f66-a3bc-e06989c42d0c}">
 		<relationship name="parameter">
 			<destination>{597b4ed1-485b-4b9a-9e63-2a69401472b9}</destination>
@@ -1014,6 +1047,14 @@
 		<property name="gain">
 			<value>6</value>
 		</property>
+	</object>
+	<object class="ProxyEffect" id="{a5efc5f2-c791-4f19-ba09-75edcf514abc}">
+		<property name="inputFormat">
+			<value>0</value>
+		</property>
+		<relationship name="preset">
+			<destination>{ed9be60e-b3d8-403a-8945-465c289600e9}</destination>
+		</relationship>
 	</object>
 	<object class="AutomationPoint" id="{6c52e454-857b-40d2-a183-5af6a6b5fa4d}">
 		<property name="position">

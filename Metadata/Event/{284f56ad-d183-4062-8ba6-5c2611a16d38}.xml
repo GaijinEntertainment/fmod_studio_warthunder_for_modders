@@ -43,6 +43,7 @@
 			<destination>{edb46c63-2356-40d0-8b32-93c1cbf070f1}</destination>
 			<destination>{8c605fcb-87fd-4ab3-b810-ae36790248f6}</destination>
 			<destination>{78e4a826-6e68-45cb-865d-d42cf4d2e8b0}</destination>
+			<destination>{92f47ee6-c915-4ea4-a056-920befc0aafa}</destination>
 		</relationship>
 		<relationship name="banks">
 			<destination>{31cfecdb-f95d-4775-9330-8bb4c8f0d520}</destination>
@@ -77,7 +78,13 @@
 			<value>4</value>
 		</property>
 		<property name="voiceStealing">
-			<value>4</value>
+			<value>1</value>
+		</property>
+		<property name="priority">
+			<value>3</value>
+		</property>
+		<property name="triggerCooldown">
+			<value>1000</value>
 		</property>
 	</object>
 	<object class="MarkerTrack" id="{fa9a331b-141e-49f8-b5f1-04c65f6e086a}" />
@@ -178,10 +185,18 @@
 			<destination>{13e7e2cb-3533-4851-8495-21285ab2847e}</destination>
 		</relationship>
 	</object>
+	<object class="ParameterProxy" id="{92f47ee6-c915-4ea4-a056-920befc0aafa}">
+		<relationship name="preset">
+			<destination>{492a0ff6-0a3e-47d8-bb80-c75349163df9}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerMaster" id="{c4adba7a-be33-4e0f-abb3-557e49e30788}">
 		<property name="overridingInputFormat">
 			<value>0</value>
 		</property>
+		<relationship name="modulators">
+			<destination>{f690e0ee-9f27-4c71-abc6-8b0645e66c92}</destination>
+		</relationship>
 		<relationship name="effectChain">
 			<destination>{a1aa43e2-9a2f-4a11-8e7d-b8f9d598cb71}</destination>
 		</relationship>
@@ -462,6 +477,23 @@
 		<relationship name="output">
 			<destination>{c4adba7a-be33-4e0f-abb3-557e49e30788}</destination>
 		</relationship>
+	</object>
+	<object class="ADSRModulator" id="{f690e0ee-9f27-4c71-abc6-8b0645e66c92}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>volume</value>
+		</property>
+		<property name="initialValue">
+			<value>-80</value>
+		</property>
+		<property name="attackTime">
+			<value>500</value>
+		</property>
+		<property name="releaseTime">
+			<value>500</value>
+		</property>
+		<property name="finalValue">
+			<value>-80</value>
+		</property>
 	</object>
 	<object class="MixerBusEffectChain" id="{a1aa43e2-9a2f-4a11-8e7d-b8f9d598cb71}">
 		<relationship name="effects">
