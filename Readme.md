@@ -22,6 +22,11 @@ https://live.warthunder.com/contribution_agreement/?lang=ru
 
 Patch notes:
 --------------------------------------------------------------------------------------------------------
+01.04.2022 - Wind of Change fmod project update.
+----------------------------------
+
+The major feature of this uipdate is deviding every bank file on two: on assets banks (.assets.bank) and meta-data banks (.bank). This made by switching corresponding flag in project build sessings. Also, there are some name changes of dialogs sound banks.
+
 -----------------------
 29.12.2021 - Winged Lions fmod project update.
 ----------------------------------
