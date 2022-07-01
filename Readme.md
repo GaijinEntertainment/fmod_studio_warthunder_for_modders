@@ -22,6 +22,12 @@ https://live.warthunder.com/contribution_agreement/?lang=ru
 
 Patch notes:
 --------------------------------------------------------------------------------------------------------
+01.07.2022 - Danger Zone fmod project update.
+----------------------------------
+
+Nothing special about this update, just new ground vehicles engines sound events, F-14 engine sound event, miscellaneous events.
+
+-----------------------
 01.04.2022 - Wind of Change fmod project update.
 ----------------------------------
 
