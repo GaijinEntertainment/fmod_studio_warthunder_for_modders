@@ -22,6 +22,12 @@ https://live.warthunder.com/contribution_agreement/?lang=ru
 
 Patch notes:
 --------------------------------------------------------------------------------------------------------
+02.11.2022 - Fire and Ice fmod project update.
+----------------------------------
+
+Added several new sound events for the new tech.
+
+-----------------------
 01.07.2022 - Danger Zone fmod project update.
 ----------------------------------
 
