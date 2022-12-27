@@ -22,6 +22,12 @@ https://live.warthunder.com/contribution_agreement/?lang=ru
 
 Patch notes:
 --------------------------------------------------------------------------------------------------------
+27.12.2022 - Apex Predators fmod project update.
+----------------------------------
+
+Added several new sound events for the new tech.
+
+-----------------------
 02.11.2022 - Fire and Ice fmod project update.
 ----------------------------------
 
