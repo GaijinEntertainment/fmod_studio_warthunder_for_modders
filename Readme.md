@@ -22,6 +22,12 @@ https://live.warthunder.com/contribution_agreement/?lang=ru
 
 Patch notes:
 --------------------------------------------------------------------------------------------------------
+05.04.2023 - Sky Guardians fmod project update.
+----------------------------------
+
+Added several new sound events for the new tech. Some sound assets (explosions, cannon shots, etc) hads been updated.
+
+-----------------------
 27.12.2022 - Apex Predators fmod project update.
 ----------------------------------
 
