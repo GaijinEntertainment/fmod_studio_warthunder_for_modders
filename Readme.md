@@ -22,6 +22,14 @@ https://live.warthunder.com/contribution_agreement/?lang=ru
 
 Patch notes:
 --------------------------------------------------------------------------------------------------------
+19.06.2023 - La Royale fmod project update.
+----------------------------------
+
+Added new ground vehicles and naval vessels crew sound events. Also added all languages banks for naval crew and English UK, English US, Russian languages banks.
+Added new snapshot for ground vehicles with open turret, "tank_open", works like snapshot "tank".
+Added several new sound events: for btr80a engine, for radiator damage, for type 23L cannon.
+
+-----------------------
 05.04.2023 - Sky Guardians fmod project update.
 ----------------------------------
 
