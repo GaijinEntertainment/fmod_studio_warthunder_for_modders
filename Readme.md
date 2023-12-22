@@ -22,6 +22,18 @@ https://live.warthunder.com/contribution_agreement/?lang=ru
 
 Patch notes:
 --------------------------------------------------------------------------------------------------------
+22.12.2023 - Air Superiority fmod project update.
+----------------------------------
+
+Added sounds events for the new weapons and engines.
+Added US naval crew voices.
+Added German tank crew voices.
+Several new sound events added (like missile fly by sounds, aircraft control devices sounds, ect.).
+Tank crew radio static noises moved to separate sound bank.
+
+Still not all tank crew voices sound asssets added, the work is in progress.
+
+-----------------------
 22.09.2023 - Sons of Atilla fmod project update.
 ----------------------------------
 
