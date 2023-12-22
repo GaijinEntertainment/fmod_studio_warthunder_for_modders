@@ -31,7 +31,7 @@ Added German tank crew voices.
 Several new sound events added (like missile fly by sounds, aircraft control devices sounds, ect.).
 Tank crew radio static noises moved to separate sound bank.
 
-Still not all tank crew voices sound asssets added, the work is in progress.
+Still not all tank crew voices sound assets added, the work is in progress.
 
 -----------------------
 22.09.2023 - Sons of Atilla fmod project update.
