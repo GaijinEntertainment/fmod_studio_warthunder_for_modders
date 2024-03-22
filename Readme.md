@@ -22,6 +22,12 @@ https://live.warthunder.com/contribution_agreement/?lang=ru
 
 Patch notes:
 --------------------------------------------------------------------------------------------------------
+22.03.2024 - Alpha Strike fmod project update.
+----------------------------------
+
+Added sounds events for the new weapons and engines.
+
+-----------------------
 22.12.2023 - Air Superiority fmod project update.
 ----------------------------------
 
