@@ -22,6 +22,13 @@ https://live.warthunder.com/contribution_agreement/?lang=ru
 
 Patch notes:
 --------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------
+19.06.2024 - Seek and Destroy fmod project update.
+----------------------------------
+
+Added sounds events for the new weapons. Added sends from aircraft AI engines sounds to the new Return bus for the jet flanger sound effect. Added Return bus for ground crew dialogs.
+
+-----------------------
 22.03.2024 - Alpha Strike fmod project update.
 ----------------------------------
 
