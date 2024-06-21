@@ -22,7 +22,12 @@ https://live.warthunder.com/contribution_agreement/?lang=ru
 
 Patch notes:
 --------------------------------------------------------------------------------------------------------
---------------------------------------------------------------------------------------------------------
+19.06.2024 - Revert of some sound assets and mixer view items of Seek and Destroy fmod project update.
+----------------------------------
+
+We decided to revert some work on SaD sound due to strong negative feedback of players. Reverted sound assets: explosion, far tank shots, m61 vulcan, gau12. Reverted mixer view items: return bus for distorted voice processing (ground crew), reverb for internal view. Also rolled back radio noise sounds for ground crew messages.
+
+-----------------------
 19.06.2024 - Seek and Destroy fmod project update.
 ----------------------------------
 
