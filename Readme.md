@@ -26,6 +26,7 @@ Patch notes:
 ----------------------------------
 
 We decided to revert some work on SaD sound due to strong negative feedback of players. Reverted sound assets: explosion, far tank shots, m61 vulcan, gau12. Reverted mixer view items: return bus for distorted voice processing (ground crew), reverb for internal view. Also rolled back radio noise sounds for ground crew messages.
+
 UPDATE: crew sound banks names changed, _new suffixes has been removed.
 
 -----------------------
