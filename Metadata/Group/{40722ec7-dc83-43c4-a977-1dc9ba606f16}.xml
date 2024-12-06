@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
 	<object class="MixerGroup" id="{40722ec7-dc83-43c4-a977-1dc9ba606f16}">
-		<property name="volume">
-			<value>-6</value>
-		</property>
 		<property name="name">
 			<value>sounds</value>
 		</property>
@@ -42,6 +39,8 @@
 			<destination>{813f9be4-68e9-465b-a836-6602001d47d9}</destination>
 			<destination>{80645407-c177-4a68-a751-6d16392ccf5c}</destination>
 			<destination>{8603d7ff-d0be-4f07-9adc-7fd6c8ab94fc}</destination>
+			<destination>{fcb7de6f-8caf-4ae0-8e51-0824ae4891f5}</destination>
+			<destination>{042329e5-e599-4875-b8f6-ca8d838e47d1}</destination>
 			<destination>{f8b9b4a0-be5c-452d-a8b3-61842297cc69}</destination>
 		</relationship>
 	</object>
@@ -81,17 +80,23 @@
 		</relationship>
 	</object>
 	<object class="MultibandEqEffect" id="{8603d7ff-d0be-4f07-9adc-7fd6c8ab94fc}">
+		<property name="filterTypeB">
+			<value>7</value>
+		</property>
 		<property name="filterTypeC">
 			<value>9</value>
 		</property>
 		<property name="filterTypeD">
 			<value>9</value>
 		</property>
+		<property name="filterTypeE">
+			<value>8</value>
+		</property>
 		<property name="frequencyA">
 			<value>22000</value>
 		</property>
 		<property name="frequencyB">
-			<value>5000</value>
+			<value>80</value>
 		</property>
 		<property name="frequencyC">
 			<value>300</value>
@@ -100,7 +105,7 @@
 			<value>2300</value>
 		</property>
 		<property name="frequencyE">
-			<value>8000</value>
+			<value>5000</value>
 		</property>
 		<property name="qualityB">
 			<value>0.519999981</value>
@@ -108,31 +113,39 @@
 		<property name="qualityC">
 			<value>0.699999988</value>
 		</property>
-		<property name="gainB">
-			<value>3</value>
-		</property>
 		<property name="gainC">
 			<value>-3</value>
 		</property>
 		<property name="gainD">
 			<value>-2</value>
 		</property>
-		<property name="gainE">
-			<value>4</value>
-		</property>
+		<relationship name="modulators">
+			<destination>{43c1d798-4a79-473d-b706-de82253d4120}</destination>
+			<destination>{922a5752-91af-49e3-a331-36552a8593c7}</destination>
+		</relationship>
+	</object>
+	<object class="GainEffect" id="{fcb7de6f-8caf-4ae0-8e51-0824ae4891f5}">
+		<relationship name="modulators">
+			<destination>{143b2059-66a1-4cc5-acd4-1749a819b030}</destination>
+		</relationship>
+	</object>
+	<object class="GainEffect" id="{042329e5-e599-4875-b8f6-ca8d838e47d1}">
+		<relationship name="modulators">
+			<destination>{9f9dd77f-b679-4369-ab92-4a3a266d6f4f}</destination>
+		</relationship>
 	</object>
 	<object class="CompressorEffect" id="{f8b9b4a0-be5c-452d-a8b3-61842297cc69}">
 		<property name="threshold">
 			<value>-6</value>
+		</property>
+		<property name="ratio">
+			<value>4</value>
 		</property>
 		<property name="attackTime">
 			<value>0.100000001</value>
 		</property>
 		<property name="releaseTime">
 			<value>10</value>
-		</property>
-		<property name="gain">
-			<value>1</value>
 		</property>
 		<property name="linkChannels">
 			<value>false</value>
@@ -177,5 +190,100 @@
 		<property name="value">
 			<value>-24</value>
 		</property>
+	</object>
+	<object class="SidechainModulator" id="{43c1d798-4a79-473d-b706-de82253d4120}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>gainB</value>
+		</property>
+		<property name="amount">
+			<value>10</value>
+		</property>
+		<property name="attackTime">
+			<value>10</value>
+		</property>
+		<property name="releaseTime">
+			<value>400</value>
+		</property>
+		<property name="minimumThreshold">
+			<value>-6</value>
+		</property>
+		<property name="maximumThreshold">
+			<value>10</value>
+		</property>
+		<relationship name="sidechains">
+			<destination>{18eb53d5-e16a-408e-b30f-32daf40d26a8}</destination>
+		</relationship>
+	</object>
+	<object class="SidechainModulator" id="{922a5752-91af-49e3-a331-36552a8593c7}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>gainE</value>
+		</property>
+		<property name="levelMode">
+			<value>1</value>
+		</property>
+		<property name="amount">
+			<value>10</value>
+		</property>
+		<property name="attackTime">
+			<value>500</value>
+		</property>
+		<property name="releaseTime">
+			<value>3000</value>
+		</property>
+		<property name="minimumThreshold">
+			<value>-6</value>
+		</property>
+		<property name="maximumThreshold">
+			<value>10</value>
+		</property>
+		<relationship name="sidechains">
+			<destination>{18eb53d5-e16a-408e-b30f-32daf40d26a8}</destination>
+		</relationship>
+	</object>
+	<object class="SidechainModulator" id="{143b2059-66a1-4cc5-acd4-1749a819b030}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>gain</value>
+		</property>
+		<property name="amount">
+			<value>30</value>
+		</property>
+		<property name="releaseTime">
+			<value>1000</value>
+		</property>
+		<property name="minimumThreshold">
+			<value>-8</value>
+		</property>
+		<property name="maximumThreshold">
+			<value>10</value>
+		</property>
+		<relationship name="sidechains">
+			<destination>{18eb53d5-e16a-408e-b30f-32daf40d26a8}</destination>
+		</relationship>
+	</object>
+	<object class="SidechainModulator" id="{9f9dd77f-b679-4369-ab92-4a3a266d6f4f}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>gain</value>
+		</property>
+		<property name="levelMode">
+			<value>1</value>
+		</property>
+		<property name="amount">
+			<value>30</value>
+		</property>
+		<property name="attackTime">
+			<value>500</value>
+		</property>
+		<property name="releaseTime">
+			<value>3200</value>
+		</property>
+		<property name="minimumThreshold">
+			<value>-10</value>
+		</property>
+		<property name="maximumThreshold">
+			<value>10</value>
+		</property>
+		<relationship name="sidechains">
+			<destination>{18eb53d5-e16a-408e-b30f-32daf40d26a8}</destination>
+		</relationship>
 	</object>
 </objects>

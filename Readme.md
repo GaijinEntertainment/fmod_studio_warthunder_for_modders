@@ -22,7 +22,14 @@ https://live.warthunder.com/contribution_agreement/?lang=ru
 
 Patch notes:
 --------------------------------------------------------------------------------------------------------
-27.09.2024 - Revert of some sound assets and mixer view items of Seek and Destroy fmod project update.
+06.12.2024 - Firebirds fmod project update.
+----------------------------------
+
+There are changes in Mixer view. Dynamic processing added for the increasing of dynamic range of game sound.
+Also added some new sound events (aden cannon, ammo crate burn effect, etc.)
+
+-----------------------
+27.09.2024 - Dance of Dragon fmod project update.
 ----------------------------------
 
 Fmod Studio version changed to 2.02.22. Some new events added, the way of tank crew voices processing changed.
