@@ -22,7 +22,7 @@ https://live.warthunder.com/contribution_agreement/?lang=ru
 
 Patch notes:
 --------------------------------------------------------------------------------------------------------
-04.04.2024 - Hornet's Sting fmod project update
+04.04.2025 - Hornet's Sting fmod project update
 ----------------------------------
 
 Various sound events added. Changed ground cannons sound events, added layers with classic sound assets.
