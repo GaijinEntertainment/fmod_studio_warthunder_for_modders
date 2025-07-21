@@ -22,6 +22,12 @@ https://live.warthunder.com/contribution_agreement/?lang=ru
 
 Patch notes:
 --------------------------------------------------------------------------------------------------------
+21.07.2025 - Leviathans fmod project update
+----------------------------------
+
+Various sound assets and events added.
+
+-----------------------
 04.04.2025 - Hornet's Sting fmod project update
 ----------------------------------
 
