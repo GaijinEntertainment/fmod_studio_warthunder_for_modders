@@ -22,7 +22,7 @@ https://live.warthunder.com/contribution_agreement/?lang=ru
 
 Patch notes:
 --------------------------------------------------------------------------------------------------------
-06.10.2025 - Leviathans fmod project update
+06.10.2025 - Tusk Force fmod project update
 ----------------------------------
 
 Various sound assets and events added.
