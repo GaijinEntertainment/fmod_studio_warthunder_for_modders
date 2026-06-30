@@ -5,7 +5,7 @@
 			<value>mgc30l_gun_outside</value>
 		</property>
 		<property name="outputFormat">
-			<value>5</value>
+			<value>2</value>
 		</property>
 		<relationship name="folder">
 			<destination>{4780bd49-3026-48ef-9f83-0b0ceba24fbe}</destination>
@@ -39,6 +39,7 @@
 			<destination>{9cd61707-8b8e-4916-b3b7-a2cc9bdbfdec}</destination>
 			<destination>{4a899593-c847-4a9c-9b7b-eaa52c0f05d8}</destination>
 			<destination>{c31aa6a2-ffc6-4fb1-9cf5-7b88789c2943}</destination>
+			<destination>{57835e5a-e830-4aa1-83cc-f8bf053f8e22}</destination>
 		</relationship>
 		<relationship name="banks">
 			<destination>{02933061-e739-45d1-ac05-8f0c24cb0ecb}</destination>
@@ -119,9 +120,6 @@
 		<relationship name="modules">
 			<destination>{0be5b88a-d829-4d86-af8d-ff0e8da4c249}</destination>
 		</relationship>
-		<relationship name="excludedPlatforms">
-			<destination>{79817437-9e34-4b5a-8618-959c7e404103}</destination>
-		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{1f9d26c4-e0b6-4bc6-991f-31887ac8364f}</destination>
 		</relationship>
@@ -161,6 +159,11 @@
 	<object class="ParameterProxy" id="{c31aa6a2-ffc6-4fb1-9cf5-7b88789c2943}">
 		<relationship name="preset">
 			<destination>{629f73ca-453e-4b6b-8205-62e297e393f0}</destination>
+		</relationship>
+	</object>
+	<object class="ParameterProxy" id="{57835e5a-e830-4aa1-83cc-f8bf053f8e22}">
+		<relationship name="preset">
+			<destination>{b3d1b826-b0db-4e17-a33b-0244e0ffb0b9}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{ed521c96-2c8b-43e7-8e4d-7fcc93f2d371}">
@@ -377,10 +380,10 @@
 			<value>0</value>
 		</property>
 		<property name="minimumTimeDelay">
-			<value>220</value>
+			<value>390</value>
 		</property>
 		<property name="maximumTimeDelay">
-			<value>220</value>
+			<value>390</value>
 		</property>
 		<property name="maxVoices">
 			<value>1</value>
@@ -393,6 +396,7 @@
 		</property>
 		<relationship name="triggerConditions">
 			<destination>{7636d01e-cbf8-4433-9a42-b584e4d82299}</destination>
+			<destination>{b4960418-6d09-42e2-b092-ecb5c17986f3}</destination>
 		</relationship>
 		<relationship name="sounds">
 			<destination>{0ea82621-bba2-406a-82bc-cd2b698ecf39}</destination>
@@ -406,9 +410,6 @@
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{1f9d26c4-e0b6-4bc6-991f-31887ac8364f}">
-		<property name="volume">
-			<value>-16</value>
-		</property>
 		<property name="name">
 			<value>scatter</value>
 		</property>
@@ -462,12 +463,12 @@
 		<relationship name="effects">
 			<destination>{fc98f0e9-1a56-4803-b9c1-1097e61d2a28}</destination>
 			<destination>{b81a41f4-b093-4f52-bb41-72ccc96c1941}</destination>
-			<destination>{a00d38dc-3a9f-458b-826f-6d14820200f7}</destination>
+			<destination>{2ed13c78-d718-4e2c-b72e-6d05be8361d7}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{55b5656f-bda2-4542-b4e5-0db1aa41df13}">
-		<property name="overridingOutputFormat">
-			<value>5</value>
+		<property name="disabledSpeakers">
+			<value>4</value>
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{82fbdc6c-b654-4d1a-b750-0c10fc258f7b}" />
@@ -697,6 +698,17 @@
 			<destination>{80a7e6c3-2e50-43b1-b758-76d17c99c750}</destination>
 		</relationship>
 	</object>
+	<object class="ParameterCondition" id="{b4960418-6d09-42e2-b092-ecb5c17986f3}">
+		<property name="minimum">
+			<value>1</value>
+		</property>
+		<property name="maximum">
+			<value>1</value>
+		</property>
+		<relationship name="parameter">
+			<destination>{b3d1b826-b0db-4e17-a33b-0244e0ffb0b9}</destination>
+		</relationship>
+	</object>
 	<object class="SingleSound" id="{0ea82621-bba2-406a-82bc-cd2b698ecf39}">
 		<relationship name="audioFile">
 			<destination>{9e667e28-082d-4614-88d3-9298f2e08c7c}</destination>
@@ -771,36 +783,12 @@
 			<destination>{c57c4437-bd88-4b33-9e7a-ac95afc0f60d}</destination>
 		</relationship>
 	</object>
-	<object class="SpatialiserEffect" id="{a00d38dc-3a9f-458b-826f-6d14820200f7}">
-		<property name="distanceRolloffType">
-			<value>4</value>
+	<object class="ProxyEffect" id="{2ed13c78-d718-4e2c-b72e-6d05be8361d7}">
+		<property name="inputFormat">
+			<value>1</value>
 		</property>
-		<property name="maximumDistance">
-			<value>10000</value>
-		</property>
-		<property name="extentMode">
-			<value>2</value>
-		</property>
-		<property name="soundSize">
-			<value>10</value>
-		</property>
-		<property name="minimumExtent">
-			<value>90</value>
-		</property>
-		<property name="panBlend">
-			<value>0</value>
-		</property>
-		<property name="userLFELevel">
-			<value>-16</value>
-		</property>
-		<property name="stereoToSurroundUserPanMode">
-			<value>0</value>
-		</property>
-		<property name="userStereoSeparation">
-			<value>28.6382561</value>
-		</property>
-		<relationship name="excludedPlatforms">
-			<destination>{79817437-9e34-4b5a-8618-959c7e404103}</destination>
+		<relationship name="preset">
+			<destination>{a034d5de-d383-4fff-9bbb-c1f728f2a0fc}</destination>
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{d8705f10-ead4-4933-b7d0-018de488b41b}">

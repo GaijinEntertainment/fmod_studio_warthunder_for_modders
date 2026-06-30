@@ -22,6 +22,26 @@ https://live.warthunder.com/contribution_agreement/?lang=ru
 
 Patch notes:
 --------------------------------------------------------------------------------------------------------
+30.06.2026 - Heavy Cavalry fmod project update
+----------------------------------
+
+Various sound assets and events added:
+Assets\tanks\weapon\cannons\cannon_150mm_sfh_18\
+Assets\ambient\hangar\prem\
+Assets\engines\xf5u1\
+Assets\engines\jet_engines_constructor\r15b_300\
+Assets\engines\helicopters\ah_56\
+Assets\fx\landing_hook\
+Assets\ships\explosions\boiler_steam\
+
+Please pay attention to Mixer View changes:
+bus:/wide_stereo_out - this bus is for extended stereo out
+bus:/wide_stereo_out_skip - this bus is for extended stereo out skipping
+bus:/sounds_tank_enemy_engines - this bus is for enemy tank engines, to separate them from the rest game mix
+
+All Returns containing "_headphones" string are for headphones stereo mode. You don't have to replicate them but you can do it to make your mod definitely more stable. And you definitely should replicate them if your engine, weapon sound events contain Sends to mixer (you're about to copy engine sound events form vanilla fmod project to your project).
+
+-----------------------
 06.10.2025 - Tusk Force fmod project update
 ----------------------------------
 
