@@ -42,7 +42,7 @@
 			<destination>{c1b18c6f-5d06-44cc-ad91-d0c99e9a5866}</destination>
 		</relationship>
 		<relationship name="banks">
-			<destination>{25934d07-1b5f-4684-ab32-3bf049715da5}</destination>
+			<destination>{9af267e6-b857-472b-9c7d-859e600cc47b}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixer" id="{7255a5d4-c3fe-42cd-99c5-5f131eba46ab}">
@@ -84,6 +84,7 @@
 	<object class="GroupTrack" id="{464a8160-9797-43ed-aa12-6338560058a0}">
 		<relationship name="automationTracks">
 			<destination>{74ba2f70-accd-4717-a902-e3d7b4b7e91a}</destination>
+			<destination>{ee3f7b18-01e0-48e9-b5e0-81481a3d23df}</destination>
 		</relationship>
 		<relationship name="modules">
 			<destination>{929bc411-c4bc-40d9-b8b8-d52e9a844ea0}</destination>
@@ -111,6 +112,9 @@
 		</relationship>
 		<relationship name="modules">
 			<destination>{064b2f6c-8a29-4aed-9c63-e0cd6529ab01}</destination>
+		</relationship>
+		<relationship name="excludedPlatforms">
+			<destination>{79817437-9e34-4b5a-8618-959c7e404103}</destination>
 		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{0c378f74-87e0-45f1-b018-9dd0f6e45140}</destination>
@@ -179,6 +183,11 @@
 			<destination>{3ceb2816-dbb3-4591-85c8-0d4b081e5818}</destination>
 		</relationship>
 	</object>
+	<object class="AutomationTrack" id="{ee3f7b18-01e0-48e9-b5e0-81481a3d23df}">
+		<relationship name="automator">
+			<destination>{58328328-593d-4d8e-91d1-09d7b8dfeba5}</destination>
+		</relationship>
+	</object>
 	<object class="SingleSound" id="{929bc411-c4bc-40d9-b8b8-d52e9a844ea0}">
 		<property name="isCutoff">
 			<value>true</value>
@@ -194,9 +203,6 @@
 		</property>
 		<property name="name">
 			<value>/engines_new/avro_lancaster/avro_lancaster_rear_04</value>
-		</property>
-		<property name="volume">
-			<value>2</value>
 		</property>
 		<property name="looping">
 			<value>true</value>
@@ -226,9 +232,6 @@
 		</property>
 		<property name="name">
 			<value>/engines_new/avro_lancaster/avro_lancaster_rear_01</value>
-		</property>
-		<property name="volume">
-			<value>4</value>
 		</property>
 		<property name="looping">
 			<value>true</value>
@@ -287,9 +290,6 @@
 		<property name="name">
 			<value>/engines_new/avro_lancaster/avro_lancaster_rear_04</value>
 		</property>
-		<property name="volume">
-			<value>2</value>
-		</property>
 		<property name="looping">
 			<value>true</value>
 		</property>
@@ -324,7 +324,7 @@
 			<value>/engines_new/avro_lancaster/avro_lancaster_rear_01</value>
 		</property>
 		<property name="volume">
-			<value>4</value>
+			<value>2</value>
 		</property>
 		<property name="looping">
 			<value>true</value>
@@ -438,7 +438,7 @@
 		<relationship name="effects">
 			<destination>{31fed5c6-3739-4943-adbd-c78cb9ec89db}</destination>
 			<destination>{16f57a40-c8d1-405a-af2e-8b3531162e03}</destination>
-			<destination>{326650ae-3479-42c1-9586-989fcdfdd0cb}</destination>
+			<destination>{fa3ac903-db4c-4a4e-8e1e-e879b4736908}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{abb5e008-ec34-42ce-8cdd-d27516096bff}" />
@@ -612,28 +612,16 @@
 	<object class="MixerBusFader" id="{31fed5c6-3739-4943-adbd-c78cb9ec89db}" />
 	<object class="GainEffect" id="{16f57a40-c8d1-405a-af2e-8b3531162e03}">
 		<property name="gain">
-			<value>-24</value>
+			<value>-28</value>
 		</property>
 	</object>
-	<object class="SpatialiserEffect" id="{326650ae-3479-42c1-9586-989fcdfdd0cb}">
-		<property name="distanceRolloffType">
-			<value>4</value>
-		</property>
-		<property name="maximumDistance">
-			<value>10000</value>
-		</property>
-		<property name="extentMode">
+	<object class="ProxyEffect" id="{fa3ac903-db4c-4a4e-8e1e-e879b4736908}">
+		<property name="inputFormat">
 			<value>1</value>
 		</property>
-		<property name="dopplerMultiplier">
-			<value>0</value>
-		</property>
-		<property name="userLFELevel">
-			<value>-9.99999046</value>
-		</property>
-		<property name="stereoToSurroundUserPanMode">
-			<value>0</value>
-		</property>
+		<relationship name="preset">
+			<destination>{4337faa2-24c4-4ac8-b380-5f670d2bd7e4}</destination>
+		</relationship>
 	</object>
 	<object class="AutomationPoint" id="{c70efae7-c36f-4d5a-9a29-a7a5110778ff}">
 		<property name="position">
@@ -684,7 +672,11 @@
 		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{e9b7e4bb-de8c-4776-8ae7-ad24e9339d96}" />
-	<object class="GainEffect" id="{ed06b76e-50cb-4910-b649-5dfef3490870}" />
+	<object class="GainEffect" id="{ed06b76e-50cb-4910-b649-5dfef3490870}">
+		<relationship name="automators">
+			<destination>{58328328-593d-4d8e-91d1-09d7b8dfeba5}</destination>
+		</relationship>
+	</object>
 	<object class="AutomationPoint" id="{cffdf912-65aa-441a-8624-d0d9dcea39c3}">
 		<property name="position">
 			<value>1200</value>
@@ -838,6 +830,14 @@
 		<property name="value">
 			<value>-11.0442924</value>
 		</property>
+	</object>
+	<object class="Automator" id="{58328328-593d-4d8e-91d1-09d7b8dfeba5}">
+		<property name="nameOfPropertyBeingAutomated">
+			<value>gain</value>
+		</property>
+		<relationship name="automationCurves">
+			<destination>{02b8723f-443d-426f-8b98-1131810eb620}</destination>
+		</relationship>
 	</object>
 	<object class="AutomationPoint" id="{802301fc-17b7-4747-b5c8-c40ed12b1ac6}">
 		<property name="position">
@@ -1039,6 +1039,31 @@
 		</property>
 		<property name="curveShape">
 			<value>0.222143427</value>
+		</property>
+	</object>
+	<object class="AutomationCurve" id="{02b8723f-443d-426f-8b98-1131810eb620}">
+		<relationship name="parameter">
+			<destination>{8e59ac08-8643-4597-b39a-b3aba8fa8220}</destination>
+		</relationship>
+		<relationship name="automationPoints">
+			<destination>{19e8d27b-9117-49c6-a021-2140f90de9bc}</destination>
+			<destination>{8b04f708-84b8-4666-a121-5f25a253f359}</destination>
+		</relationship>
+	</object>
+	<object class="AutomationPoint" id="{19e8d27b-9117-49c6-a021-2140f90de9bc}">
+		<property name="position">
+			<value>1502.8248587570622</value>
+		</property>
+		<property name="value">
+			<value>0</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{8b04f708-84b8-4666-a121-5f25a253f359}">
+		<property name="position">
+			<value>800</value>
+		</property>
+		<property name="value">
+			<value>-3</value>
 		</property>
 	</object>
 </objects>

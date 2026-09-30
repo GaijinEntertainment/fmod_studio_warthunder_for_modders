@@ -22,6 +22,12 @@ https://live.warthunder.com/contribution_agreement/?lang=ru
 
 Patch notes:
 --------------------------------------------------------------------------------------------------------
+16.09.2026 - Sky Odyssey fmod project update
+----------------------------------
+
+Some sound assets has been reworked, some new has been added to existing sound events. No new sound events has been added.
+
+-----------------------
 30.06.2026 - Heavy Cavalry fmod project update
 ----------------------------------
 
